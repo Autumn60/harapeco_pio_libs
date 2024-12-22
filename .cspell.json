@@ -1,6 +1,8 @@
 {
   "ignorePaths": [
     "**/*.cspell.json",
+    "**/*.pre-commit-config.yaml",
+    "**/CPPLINT.cfg",
     "**/.git/**",
     "**/.gitignore",
     "**/.vscode/**"
