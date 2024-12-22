@@ -1,0 +1,14 @@
+{
+  "ignorePaths": [
+    "**/*.cspell.json",
+    "**/.git/**",
+    "**/.gitignore",
+    "**/.vscode/**"
+  ],
+  "ignoreRegExpList": [
+  ],
+  "overrides": [
+  ],
+  "words": [
+  ]
+}
