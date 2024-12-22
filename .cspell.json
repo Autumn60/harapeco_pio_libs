@@ -8,6 +8,7 @@
     "**/.vscode/**"
   ],
   "ignoreRegExpList": [
+    "Copyright .*[0-9]{4}.+"
   ],
   "overrides": [
   ],
