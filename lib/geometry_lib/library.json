@@ -1,0 +1,23 @@
+{
+    "name": "GeometryLib",
+    "version": "0.1.0",
+    "description": "",
+    "keywords": "",
+    "repository":
+    {
+      "type": "git",
+      "url": "https://github.com/Autumn60/harapeco_pio_libs.git"
+    },
+    "authors":
+    [
+      {
+        "name": "Akiro Harada",
+        "email": "harada.akiro@gmail.com",
+        "url": "https://autumn60.github.io/",
+        "maintainer": true
+      }
+    ],
+    "license": "Apache-2.0",
+    "frameworks": "Arduino",
+    "platforms": "teensy"
+  }
