@@ -37,7 +37,11 @@ double Math::inverse_lerp(double min_val, double max_val, double val)
 
 int Math::round(double val)
 {
-  return static_cast<int>(val + 0.5);
+  if (val < 0.0) {
+    return static_cast<int>(val - 0.5);
+  } else {
+    return static_cast<int>(val + 0.5);
+  }
 }
 
 double Math::sign(double val)
