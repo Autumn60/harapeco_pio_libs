@@ -21,7 +21,9 @@ namespace cytron_motor_driver_lib
 CytronMotor::CytronMotor(int magnitude_pin, int direction_pin)
 : magnitude_pin_(magnitude_pin), direction_pin_(direction_pin)
 {
+  analogWriteFrequency(magnitude_pin_, 20000);
   pinMode(direction_pin_, OUTPUT);
+  stop();
 }
 
 void CytronMotor::drive(double power)
