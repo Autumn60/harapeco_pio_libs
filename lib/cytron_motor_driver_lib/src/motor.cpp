@@ -12,13 +12,13 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-#include "cytron_motor_driver_lib/cytron_motor.hpp"
+#include "cytron_motor_driver_lib/motor.hpp"
 
 #include <Arduino.h>
 
 namespace cytron_motor_driver_lib
 {
-CytronMotor::CytronMotor(int magnitude_pin, int direction_pin)
+Motor::Motor(int magnitude_pin, int direction_pin)
 : magnitude_pin_(magnitude_pin), direction_pin_(direction_pin)
 {
   analogWriteFrequency(magnitude_pin_, 20000);
@@ -26,13 +26,13 @@ CytronMotor::CytronMotor(int magnitude_pin, int direction_pin)
   stop();
 }
 
-void CytronMotor::drive(double power)
+void Motor::drive(double power)
 {
   digitalWrite(direction_pin_, power < 0 ? HIGH : LOW);
   analogWrite(magnitude_pin_, abs(power) * 255);
 }
 
-void CytronMotor::stop()
+void Motor::stop()
 {
   digitalWrite(direction_pin_, LOW);
   analogWrite(magnitude_pin_, 0);
